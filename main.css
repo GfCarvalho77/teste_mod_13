@@ -1,0 +1,32 @@
+body{
+    font-family: Roboto, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #e15f41 ;
+  }
+  .nav .nav-link.active{
+    background-color: #fff;
+    color:#e15f41
+  }
+  .nav-link, .navbar-brand, .navbar-brand:hover{
+    color: #fff;
+  }
+  .navbar-brand{
+    font-family: Pacifico, cursive;
+  }
+  
+  @media (min-width: 641px) and (max-width: 1023px) {
+      .container {
+        max-width: 768px; /* Ajusta a largura do container */
+      }
+      
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .col-md-6 {
+        flex: 0 1 50%;
+      }
+    }
