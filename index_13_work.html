@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>  
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+        <link rel="stylesheet" href="./main.css">
+        
+
+        <style>
+        
+        body{            
+            background-color: #ccc;
+        }
+        section{   
+          padding-top: 50px;
+          height: auto
+        }
+        .img-fluid {
+              max-width: 70%;
+              height: auto;
+              align-items: center
+        }
+        .navbar {
+            background-color: #e15f41;
+        }
+        .nav .nav-link.active{
+            background-color: #fff;
+            color:#e15f41;
+        }
+        .nav-link, .navbar-brand, .navbar-brand:hover{
+            color: #fff;
+        }
+        .navbar-brand{
+            font-family: Pacifico, cursive;
+        }
+
+        </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <header class="navbar navbar-expand-lg sticky-top p-4">
+            <div class="container">
+                <h1 class="navbar-brand">Turismo</h1>
+                <button class="navbar-toggler" alt="#" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">R<span class="navbar-toggler-icon">
+                </span></button>
+                <nav class="navbar-collapse collapse" id="menu-navegacao">
+                    <ul class="nav nav-pills d-block d-md-flex">
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link" href="#praia">Praia</a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link" href="#barco">Barco</a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link" href="#rocha">Rocha</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>    
+        </header>
+        
+        <!-- carousel -->
+        <div class="container">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./image/800x600_praia.jpg" class="d-block w-100 img-fluid mx-auto" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./image/800x600_boat.jpg" alt="#" class="d-block w-100 img-fluid mx-auto">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./image/800x600_rock.jpg" class="d-block w-100 img-fluid mx-auto" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              
+              <!-- cartoes -->
+              <section id="praia">
+                <h2>Mar</h2>
+                <div class="container">
+                  <div class="row">
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <article class="card text-bg-dark">
+                              <img src="./image/venice-2845272_960_720.jpg" alt="">
+                              <div class="card-img-overlay">
+                                  <header><h4 class="card-title"> Título do Card</h4></header>                        
+                                  <h5 class="card-subtitle">
+                                      Subtítulo do card
+                                  </h5>
+                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur consequatur dolorem itaque. .</p>
+                                  <a  href="#" class="btn btn-primary">Botão Link</a>
+                              </div>                    
+                          </article>               
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <article class="card">
+                              <header class="card-header">
+                                  Desenvolvimento Web
+                              </header>
+                              <img src="https://via.placeholder.com/100x100" alt="">
+                              <div class="card-body">
+                                  <h4 class="card-title"> Cards do Bootstrap</h4>
+                                  <p class="card-text">Conheça os cards do Bootstrap e suas variações</p>
+                                  <a  href="#" class="btn btn-primary">Leia mais</a>
+                              </div>
+                              <footer class="card-footer">
+                                  Postado em <time>06/02/2024 - 15:50</time>
+                              </footer>                  
+                          </article>               
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="card text-bg-dark" >
+                              <div class="card-header">
+                                  Cabeçalho do Header
+                              </div>
+                              <img src="https://via.placeholder.com/100x100" alt="">
+                              <div class="card-body">
+                                  <h4 class="card-title"> Título do Card</h4>
+                                  <h5 class="card-subtitle">
+                                      Subtítulo do card
+                                  </h5>
+                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur consequatur dolorem itaque. Ex odit autem doloribus.</p>
+                                  <a  href="#" class="btn btn-primary">Botão Link</a>
+                              </div>                    
+                          </div>               
+                      </div>
+                      
+                  </div>
+              </div>
+            </section>
+            <section id="barco">
+                <h2>Contato</h2>
+                <div class="container">
+                  <div class="row">
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <article class="card text-bg-dark">
+                              <img src="./image/venice-2845272_960_720.jpg" alt="">
+                              <div class="card-img-overlay">
+                                  <header><h4 class="card-title"> Título do Card</h4></header>                        
+                                  <h5 class="card-subtitle">
+                                      Subtítulo do card
+                                  </h5>
+                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur consequatur dolorem itaque. .</p>
+                                  <a  href="#" class="btn btn-primary">Botão Link</a>
+                              </div>                    
+                          </article>               
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <article class="card">
+                              <header class="card-header">
+                                  Desenvolvimento Web
+                              </header>
+                              <img src="https://via.placeholder.com/100x100" alt="">
+                              <div class="card-body">
+                                  <h4 class="card-title"> Cards do Bootstrap</h4>
+                                  <p class="card-text">Conheça os cards do Bootstrap e suas variações</p>
+                                  <a  href="#" class="btn btn-primary">Leia mais</a>
+                              </div>
+                              <footer class="card-footer">
+                                  Postado em <time>06/02/2024 - 15:50</time>
+                              </footer>                  
+                          </article>               
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="card text-bg-dark" >
+                              <div class="card-header">
+                                  Cabeçalho do Header
+                              </div>
+                              <img src="https://via.placeholder.com/100x100" alt="">
+                              <div class="card-body">
+                                  <h4 class="card-title"> Título do Card</h4>
+                                  <h5 class="card-subtitle">
+                                      Subtítulo do card
+                                  </h5>
+                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur consequatur dolorem itaque. Ex odit autem doloribus.</p>
+                                  <a  href="#" class="btn btn-primary">Botão Link</a>
+                              </div>                    
+                          </div>               
+                      </div>
+                      
+                  </div>
+              </div>
+            </section>
+            <section id="rochas">
+              <h2>Rochas</h2>
+              <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <article class="card text-bg-dark">
+                            <img src="./image/venice-2845272_960_720.jpg" alt="">
+                            <div class="card-img-overlay">
+                                <header><h4 class="card-title"> Título do Card</h4></header>                        
+                                <h5 class="card-subtitle">
+                                    Subtítulo do card
+                                </h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur consequatur dolorem itaque. .</p>
+                                <a  href="#" class="btn btn-primary">Botão Link</a>
+                            </div>                    
+                        </article>               
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <article class="card">
+                            <header class="card-header">
+                                Desenvolvimento Web
+                            </header>
+                            <img src="https://via.placeholder.com/100x100" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title"> Cards do Bootstrap</h4>
+                                <p class="card-text">Conheça os cards do Bootstrap e suas variações</p>
+                                <a  href="#" class="btn btn-primary">Leia mais</a>
+                            </div>
+                            <footer class="card-footer">
+                                Postado em <time>06/02/2024 - 15:50</time>
+                            </footer>                  
+                        </article>               
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card text-bg-dark" >
+                            <div class="card-header">
+                                Cabeçalho do Header
+                            </div>
+                            <img src="https://via.placeholder.com/100x100" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title"> Título do Card</h4>
+                                <h5 class="card-subtitle">
+                                    Subtítulo do card
+                                </h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur consequatur dolorem itaque. Ex odit autem doloribus </p>
+                                <a  href="#" class="btn btn-primary">Botão Link</a>
+                            </div>                    
+                        </div>               
+                    </div>
+                    
+                </div>
+            </div>
+          </section>
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
